@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Nishka 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOCK SCREEN -->
+<div id="lockScreen">
+  <h1>This space is made with care 🌷</h1>
+  <button onclick="enterSite()">Enter</button>
+</div>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="Sang_Rahiyo.mp3" type="audio/mp3">
+</audio>
+<button id="musicBtn" onclick="toggleMusic()">🎵</button>
+
+<!-- FLOATING DECOR -->
+<div class="floating"></div>
+
+<header>
+  <h1>Hey Nishka 🌸</h1>
+  <p id="typedText"></p>
+</header>
+
+<section class="newyear">
+  <h2>✨ New Year Letter ✨</h2>
+  <p>
+    This year doesn’t need perfection.<br>
+    It just needs you — trying, resting, becoming.<br>
+    I’m proud of you. Always.
+  </p>
+</section>
+
+<section class="gallery">
+  <div class="card" onclick="toggleNote(this)">
+    <img src="images/pic1.jpg">
+    <div class="note">You are enough, even on tired days 💗</div>
+  </div>
+
+  <div class="card" onclick="toggleNote(this)">
+    <img src="images/pic2.jpg">
+    <div class="note">Slow progress is still progress 🌷</div>
+  </div>
+
+  <div class="card" onclick="toggleNote(this)">
+    <img src="images/pic3.jpg">
+    <div class="note">You deserve kindness — especially from yourself 🐼</div>
+  </div>
+</section>
+
+<section class="open-when">
+  <h2>💌 Open When…</h2>
+  <button onclick="openMessage('anxious')">You feel anxious</button>
+  <button onclick="openMessage('placements')">Placements feel scary</button>
+  <button onclick="openMessage('sleep')">You can’t sleep</button>
+  <button onclick="openMessage('bad')">It’s a bad day</button>
+  <p id="openText"></p>
+</section>
+
+<!-- PANDA -->
+<div class="panda" onclick="pandaComfort()">🐼</div>
+
+<script src="script.js"></script>
+</body>
+</html>
